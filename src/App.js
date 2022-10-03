@@ -1,20 +1,27 @@
+import { useState } from 'react';
+
 // components
-import Footer from './components/footer';
+import Main from './components/Main.jsx';
+import Footer from './components/Footer.jsx';
 
 // styles
 import styled from 'styled-components';
 
 function App() {
   return (
-    <Main>
+    <Container>
+      <Main />
       <Footer />
-    </Main>
+    </Container>
   );
 }
 
 export default App;
 
-const Main = styled.div`
+const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  font-family: MapleFontsLight;
+  @media (min-width: 700px) {
+    setOverScreen(true);
+  }
 `;
