@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Router from './router/Router';
 import App from './App';
 import GlobalStyle from './styles/GlobalStyle';
 import GlobalFonts from './styles/fonts/fonts';
@@ -9,6 +10,8 @@ root.render(
   <>
     <GlobalStyle />
     <GlobalFonts />
-    <App />
+    <Router>
+      <App />
+    </Router>
   </>,
 );

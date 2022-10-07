@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 // styles
 import styled from 'styled-components';
 
@@ -5,8 +7,8 @@ function Buttons() {
   return (
     <>
       <MobileBtn>전공 테스트 시작</MobileBtn>
-      <MobileBtn>다른 전공 탐색</MobileBtn>
-      <MobileBtn>전공 테스트 실시간 댓글</MobileBtn>
+      <MobileBtn>전공 테스트 결과 댓글</MobileBtn>
+      <MobileBtn>어떤 전공이 있을까?</MobileBtn>
       <MobileBtn>지앤차란?</MobileBtn>
     </>
   );
