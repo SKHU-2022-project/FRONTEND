@@ -5,7 +5,7 @@ export default function TestNumber() {
   return (
     <Container>
       <Wrapper>
-        <h1>Numb</h1>
+        <h1>&nbsp;Number Count</h1>
       </Wrapper>
     </Container>
   );
@@ -18,7 +18,8 @@ const Container = styled.div`
   justify-content: center;
 `;
 const Wrapper = styled.div`
-  border: 1px solid black;
-  border-radius: 0.5rem;
-  padding: 0.5rem 11rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.75rem;
+  padding: 0.5rem 0;
+  width: 100%;
 `;
