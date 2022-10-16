@@ -1,12 +1,22 @@
 // styles
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
 import styled from 'styled-components';
 
 export default function TestNumber() {
+  const { id } = useParams();
+  const [countNum, setCountNum] = useState();
+
+  useEffect(() => {
+    async function renderPage() {
+      setCountNum(Number(id) - 1);
+    }
+    renderPage();
+  }, []);
+
   return (
     <Container>
-      <Wrapper>
-        <h1>&nbsp;Number Count</h1>
-      </Wrapper>
+      <Text>{countNum}&nbsp;/&nbsp;10</Text>
     </Container>
   );
 }
@@ -15,11 +25,10 @@ const Container = styled.div`
   padding: 0rem 2rem;
   padding-top: 3rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 `;
-const Wrapper = styled.div`
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 0.75rem;
-  padding: 0.5rem 0;
-  width: 100%;
+const Text = styled.h1`
+  font-size: 1.5rem;
 `;

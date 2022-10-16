@@ -27,11 +27,10 @@ function Main() {
           <DesktopLogo src={TestLogo} alt="임시 테스트 로고입니다." />
           <DesktopCh src={TestCh} alt="임시 테스트 로고입니다." />
           <Text>
-            <span>나에게 어울리는 // 데스크탑</span>
+            <span>나에게 어울리는</span>
             <span>교내 전공 찾기 테스트</span>
             <span>본 테스트는 4학기 미만 학생들을 위한 전공 테스트입니다.</span>
           </Text>
-          <Buttons />
         </DesktopContainer>
       )}
       {isTablet && (
@@ -39,11 +38,10 @@ function Main() {
           <TabletLogo src={TestLogo} alt="임시 테스트 로고입니다." />
           <TabletCh src={TestCh} alt="임시 테스트 로고입니다." />
           <Text>
-            <span>나에게 어울리는 //타블렛</span>
+            <span>나에게 어울리는</span>
             <span>교내 전공 찾기 테스트</span>
             <span>본 테스트는 4학기 미만 학생들을 위한 전공 테스트입니다.</span>
           </Text>
-          <Buttons />
         </TabletContainer>
       )}
 
@@ -52,11 +50,10 @@ function Main() {
           <Logo src={TestLogo} alt="임시 테스트 로고입니다." />
           <Ch src={TestCh} alt="임시 테스트 로고입니다." />
           <Text>
-            <span>나에게 어울리는 //모바일</span>
+            <span>나에게 어울리는</span>
             <span>교내 전공 찾기 테스트</span>
             <span>본 테스트는 4학기 미만 학생들을 위한 전공 테스트입니다.</span>
           </Text>
-          <Buttons />
         </MobileContainer>
       )}
     </>
@@ -67,7 +64,6 @@ export default Main;
 
 // Desktop
 const DesktopContainer = styled.div`
-  height: 130vh;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -83,9 +79,7 @@ const DesktopCh = styled.img`
 `;
 // Tablet
 const TabletContainer = styled.div`
-  height: 120vh;
   margin-top: 5rem;
-  margin-bottom: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,9 +95,7 @@ const TabletCh = styled.img`
 
 // Mobile
 const MobileContainer = styled.div`
-  height: 115vh;
   margin-top: 5rem;
-  margin-bottom: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center;

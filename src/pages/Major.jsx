@@ -14,7 +14,7 @@ export default function Major() {
       <LogoImg src={TestCh} alt="" />
       <Question>첫번째 질문 : 당신의 학부는?</Question>
       <BtnBox>
-        <Link to={`/humanities/test`}>
+        <Link to={`/humanities/test/`}>
           <MobileBtn>1. 인문 융합자율학부</MobileBtn>
         </Link>
         <Link to={`/sociology/test`}>
@@ -23,7 +23,7 @@ export default function Major() {
         <Link to={`/media/test`}>
           <MobileBtn>3. 미디어 융합자율학부</MobileBtn>
         </Link>
-        <Link to={`/it/test`}>
+        <Link to={`/it/test/2`}>
           <MobileBtn>4. IT 융합자율학부</MobileBtn>
         </Link>
       </BtnBox>

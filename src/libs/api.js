@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const instance = axios.create({
-  baseURL: 'http://10.0.160.28:8080/',
+  baseURL: 'https://skhuzhuanye.herokuapp.com/',
 });
 
 function requestInterceptor(config) {
@@ -18,7 +18,6 @@ instance.interceptors.request.use(requestInterceptor);
 
 function responseFulfilledInterceptor(res) {
   if (200 <= res.status && res.status < 300) {
-    console.log('work');
     return res.data;
   }
   return Promise.reject(res.data);
