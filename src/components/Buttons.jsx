@@ -5,16 +5,28 @@ import styled from 'styled-components';
 
 function Buttons() {
   return (
-    <>
-      <MobileBtn>전공 테스트 시작</MobileBtn>
-      <MobileBtn>전공 테스트 결과 댓글</MobileBtn>
-      <MobileBtn>어떤 전공이 있을까?</MobileBtn>
-      <MobileBtn>지앤차란?</MobileBtn>
-    </>
+    <Container>
+      <Link to={`/major`}>
+        <MobileBtn>전공 테스트 시작하기</MobileBtn>
+      </Link>
+      <Link to={`/comment`}>
+        <MobileBtn>전공 테스트 결과 댓글 보러가기</MobileBtn>
+      </Link>
+      <Link to={`/introduce`}>
+        <MobileBtn>스쿠 쭈안이에가 궁금해</MobileBtn>
+      </Link>
+    </Container>
   );
 }
 
 export default Buttons;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+`;
 
 const MobileBtn = styled.button`
   width: 40vh;

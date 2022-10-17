@@ -1,5 +1,6 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { Link } from 'react-router-dom';
 
 // styles
 import styled from 'styled-components';
@@ -16,6 +17,10 @@ function Footer() {
     query: '(max-width:767px)',
   });
 
+  function onClickHandler() {
+    alert('미구현입니다.');
+  }
+
   return (
     <>
       {isDesktop && (
@@ -28,8 +33,8 @@ function Footer() {
             </div>
             <Countries>
               <button>한국어</button>
-              <button>English</button>
-              <button>中國語</button>
+              <button onClick={onClickHandler}>English</button>
+              <button onClick={onClickHandler}>中國語</button>
             </Countries>
           </DesktopWrapper>
         </DesktopContainer>
@@ -44,8 +49,8 @@ function Footer() {
             </div>
             <Countries>
               <button>한국어</button>
-              <button>English</button>
-              <button>中國語</button>
+              <button onClick={onClickHandler}>English</button>
+              <button onClick={onClickHandler}>中國語</button>
             </Countries>
           </TabletWrapper>
         </TabletContainer>
@@ -60,8 +65,8 @@ function Footer() {
             </div>
             <Countries>
               <button>한국어</button>
-              <button>English</button>
-              <button>中國語</button>
+              <button onClick={onClickHandler}>English</button>
+              <button onClick={onClickHandler}>中國語</button>
             </Countries>
           </MobileWrapper>
         </MobileContainer>
